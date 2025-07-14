@@ -1,7 +1,12 @@
-// /app/api/ai-enhance/route.js
+
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
+  if (!process.env.OPENROUTER_API_KEY) {
+  console.warn("⚠️ Missing API key. AI features may not work.");
+  return NextResponse.json({ error: "API key missing. AI temporarily unavailable." }, { status: 500 });
+}
+
   try {
     const { message } = await req.json();
 
