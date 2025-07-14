@@ -1,7 +1,4 @@
 
----
-
-## 💼 3. TiaSumé – AI Resume Builder + Templates + PDF
 
 # 💼 TiaSumé – AI-Powered Resume Builder
 
